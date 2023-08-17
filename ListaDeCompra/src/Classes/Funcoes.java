@@ -117,7 +117,10 @@ public class Funcoes {
                 confirm = loop;
             }
         }
+
+        escreveArquivo();
         return volta;
+
     }
     //método para removerr o nome quantidade e tipo do item de uma posição do ArryList
     public int excluirItem(){
@@ -151,7 +154,7 @@ public class Funcoes {
         }
 
 
-
+        escreveArquivo();
         return volta;
     }
     //método para visualizar todas as posições do ArrayList
@@ -192,6 +195,7 @@ public class Funcoes {
         lista.set(posicao,novoNome.toUpperCase());
         System.out.printf("Nome alterado para: %s\n",lista.get(posicao));
 
+        escreveArquivo();
         return volta;
     }
     //método para editar o nome do item de um posição do ArryList
@@ -222,7 +226,7 @@ public class Funcoes {
 
         listaQntd.set(posicao,String.valueOf(novaQntd));
         System.out.printf("Quantidade do item %S alterada para %s\n",nome, listaQntd.get(posicao));
-
+        escreveArquivo();
         return volta;
     }
     //método para editar o nome quantidade e tipo do item de um posição do ArryList
@@ -269,7 +273,7 @@ public class Funcoes {
 
         System.out.printf("Nome: %s\tQuantidade: %.2f\n",lista.get(posicao),listaQntd.get(posicao));
 
-
+        escreveArquivo();
         return volta;
     }
 
@@ -277,6 +281,7 @@ public class Funcoes {
     public void escreveArquivo(){
        arquivo.escreveArquivo(lista,listaQntd,listaMedida,listaTipo);
     }
+
 
     //método ajuda
     public void ajuda(int resp){
@@ -299,17 +304,13 @@ public class Funcoes {
             System.out.println("=================================================================");
         }else if(resp == 5){
             System.out.println("=================================================================");
-            System.out.println("5 - Gera um arquivo de texto(.txt) no seu computador para você poder consultar ou imprimir a lista, caso necessário");
-            System.out.println("=================================================================");
-        }else if(resp == 6){
-            System.out.println("=================================================================");
             System.out.printf("Consulta o banco de dados para verficar os itens do estoque, possui 4 opções:\n" +
                     "1- visualizar todos os itens do banco de dados\n" +
                     "2 - visulaizar os itens do banco de dados filtrados por meio do tipo deles[carnes, frios, etc...]\n" +
                     "3- visulaizar os itens do banco de dados por filtrados por nome\n" +
                     "4 - visualizar os itens do banco de dados filtrados por quantidade\n");
             System.out.println("=================================================================");
-        }else if(resp== 7){
+        }else if(resp== 6){
             System.out.println("=================================================================");
             System.out.printf("Função para editar o banco de dados, possui 3 opções:\n" +
                     "1 - Adicionar um item ao banco de dados, para isso deve-se inserir: nome, tipo, medida e quantidade\n" +

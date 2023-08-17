@@ -14,13 +14,13 @@ public class Main {
 
     if(escolha == 1){
         menus.menuEscolhaLista();
-    }else if(escolha == 2){
-        funcoes.escreveArquivo();
-    }else if(escolha == 3){
+    } else if(escolha == 2){
         menus.menuDataBase();
-    }else if(escolha == 4){
+    }else if(escolha == 3){
         menus.menuAjuda();
     }
+
+
 
 
 

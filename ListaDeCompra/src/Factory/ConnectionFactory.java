@@ -12,7 +12,7 @@ public class ConnectionFactory {
     private static final String PASSWORD = " ";
 
     //caminho da database
-    private static final String DATABASE_URL = " ";
+    private static final String DATABASE_URL = "caminho";
 
     //conexão com a database
     public static Connection createConnectionToMySQL() throws Exception {

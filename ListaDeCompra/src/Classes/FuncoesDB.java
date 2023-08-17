@@ -21,10 +21,12 @@ public class FuncoesDB {
         System.out.println("Digite o NOME do item a ser adicionado ao estoque: ");
         String nomeItem = scanner.nextLine();
 
-        System.out.println("Digite a QUANTIDADE do item a ser adicionado ao estoque e a MEDIDA do item(UN, Kg, ...)");
-        Double qntd = scanner.nextDouble();String medida = scanner.nextLine();
+        System.out.println("Digite a medida do item a ser adicionado ao estoque(UN,Kg,g,L,Mkl): ");
+        String medida = scanner.nextLine();
+        System.out.println("Digite a QUANTIDADE do item a ser adicionado ao estoque");
+        Double qntd = scanner.nextDouble();
 
-
+        scanner.nextLine();
         System.out.println("Digite o TIPO do item a ser adicionado(massa, carne,etc...): ");
         String tipo = scanner.nextLine();
 

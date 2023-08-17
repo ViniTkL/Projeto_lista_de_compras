@@ -41,7 +41,6 @@ public class ItensDAO {
 
             //executar a query
             pstm.execute();
-            System.out.println("PENIS SALVO");
         }catch (Exception e){
             e.printStackTrace();
         }finally{

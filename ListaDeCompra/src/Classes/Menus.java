@@ -10,14 +10,13 @@ public class Menus {
         System.out.println("================================");
         System.out.println("Bem vindo ao menu de escolha");
         System.out.println("1-Editar e verificar a lista de compra");
-        System.out.println("2-Gerar arquivo de compras");
-        System.out.println("3-verificar e editar os itens em estoque");
-        System.out.println("4-Ajuda");
+        System.out.println("2-verificar e editar os itens em estoque");
+        System.out.println("3-Ajuda");
         System.out.println("================================");
         try {
             System.out.println("Por favor, selecione uma das opções acima: ");
              resp = scanner.nextInt();
-            if((resp > 4)){
+            if((resp > 3)){
                 System.out.println("Valor invalido, tente novamente: ");
                 menuEscolha();
             }
@@ -118,13 +117,12 @@ public class Menus {
         System.out.println("2-Remover item da lista de compra");
         System.out.println("3-Verificar a lista de compra");
         System.out.println("4-Editar Lista de compras");
-        System.out.println("5-Gerar arquivo de compras");
-        System.out.println("6-Verificar os itens em estoque");
-        System.out.println("7-Editar os itens em estoque");
+        System.out.println("5-Verificar os itens em estoque");
+        System.out.println("6-Editar os itens em estoque");
         System.out.println("Digite o número do item que deseja consultar(ou digite 0 para voltar ao menu pricncipal): ");
        try{
         resp = scanner.nextInt();
-        if(resp>7){
+        if(resp>6){
             System.out.println("Valor inválido, tente novamente");
             menuAjuda();
         } else if(resp == 0){

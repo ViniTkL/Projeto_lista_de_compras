@@ -24,7 +24,7 @@ public class ArquivoTextoLista {
 
     //criando caminho do arquivo
     public Path caminhoArquivo() {
-        Path caminho = Paths.get("C:\\CAMNHIO"+this.nomeArquivo+".txt");
+        Path caminho = Paths.get("C:\\Caminho"+this.nomeArquivo+".txt");
         return (caminho);
     }
 
@@ -44,7 +44,7 @@ public class ArquivoTextoLista {
             BufferedWriter buff = new BufferedWriter(escrever);
             buff.write("Itens\t-\t\tQuantidade\t-\t\tMedida\t-\t\ttipo");
             buff.newLine();
-            for(int i=0; i< list1.size(); i++){
+            for(int i=0;i<list1.size();i++){
                 buff.write(list1.get(i) + "\t - \t\t"+list2.get(i)+ "\t - \t\t"+list3.get(i)+ "\t - \t\t"+list4.get(i));
                 buff.newLine();
             }
